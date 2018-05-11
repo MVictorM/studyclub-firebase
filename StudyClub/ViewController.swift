@@ -27,6 +27,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let q4 = ThreadItem(studentName: "Rebeca Santana 2", questionTitle: "", questionText: "Pessoal, não faço a mínima idéia do que fazer no exercício 17 do livro. Tentei uns rabiscos e tou enviando eles nas fotos, o livro ta como PDF.", numberOfImagesAttached: 0, numberOfPDFsAttached: 0, expanded: true)
     let q5 = ThreadItem(studentName: "Rebeca Santana 3", questionTitle: "", questionText: "Pessoal, não faço a mínima idéia do que fazer no exercício 17 do livro. Tentei uns rabiscos e tou enviando eles nas fotos, o livro ta como PDF.", numberOfImagesAttached: 0, numberOfPDFsAttached: 0, expanded: true)
     var questions: [ThreadItem] = []
+    
+    var sections = [
+        Section(
+            username: "Rebeca Santana",
+            question: "Alguém fez o exercício 17 do livro? asdadalksdaskjdaskldjAlguém fez o exercício 17 do livro? asdadalksdaskjdaskldjAlguém fez o exercício 17 do livro? asdadalksdaskjdaskldjAlguém fez o exercício 17 do livro? asdadalksdaskjdaskldjAlguém fez o exercício 17 do livro? asdadalksdaskjdaskldjAlguém fez o exercício 17 do livro? asdadalksdaskjdaskldjAlguém fez o exercício 17 do livro? asdadalksdaskjdaskldjAlguém fez o exercício 17 do livro? asdadalksdaskjdaskldj",
+            expanded: false
+        ),
+        Section(
+            username: "Rodrigo Carvalho",
+            question: "Eu fiz",
+            expanded: false
+        )
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +48,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.questionsTableView?.dataSource = self
         self.questionsTableView?.delegate = self
         
-//        self.questionsTableView?.contentInset = UIEdgeInsetsMake(20.0, 0.0, 0.0, 0.0)
-//        self.questionsTableView?.rowHeight = UITableViewAutomaticDimension
-//        self.questionsTableView?.estimatedRowHeight = 300
-        self.questionsTableView?.rowHeight = 300
+        self.questionsTableView?.rowHeight = UITableViewAutomaticDimension
+        self.questionsTableView?.estimatedRowHeight = 80.0
+//        self.questionsTableView?.rowHeight = 300
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,6 +85,60 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //            cell?.numberOfPDFsAttached?.text = String(questions[indexPath.row].numberOfPDFsAttached)
 //            return cell!
 //        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
+    }
+    
+    
+    //  Tamanho da celula fechada
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 80
+    }
+    
+    //    Tamanho da sub-celula aberta
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if (sections[indexPath.section].expanded) {
+            return UITableViewAutomaticDimension
+        } else {
+            return 0
+        }
+    }
+    
+    //    Espaco entre as celulas
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 2
+    }
+    
+    //    Celular expandivel
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = ExpandableHeaderView()
+        header.customInit(username: sections[section].username, section: section, delegate: self)
+        return header
+    }
+    
+    //    Celular expandida
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "contractedTableViewCell")!
+        cell.textLabel?.text = sections[indexPath.section].question
+        return cell
+    }
+    
+    //    Funcao usada quando seleciona pra expandir a celula
+    func toggleSection(header: ExpandableHeaderView, section: Int) {
+        sections[section].expanded = !sections[section].expanded
+        
+        tableView.beginUpdates()
+        tableView.reloadRows(at: [IndexPath(row: 0, section: section)], with: .automatic)
+        tableView.endUpdates()
     }
 }
 
