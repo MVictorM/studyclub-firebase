@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		989A002820A9EDBE00D6545C /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A002720A9EDBE00D6545C /* SubjectViewController.swift */; };
+		989A002A20A9EE2700D6545C /* CadastroMateriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A002920A9EE2700D6545C /* CadastroMateriaViewController.swift */; };
+		989A002C20A9F5FD00D6545C /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A002B20A9F5FD00D6545C /* SubjectTableViewCell.swift */; };
 		98A74EED20A6078700CDCE27 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A74EEB20A6078700CDCE27 /* Section.swift */; };
 		98A74EEE20A6078700CDCE27 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A74EEC20A6078700CDCE27 /* ExpandableHeaderView.swift */; };
 		98CAFE6B20A355BD00938C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFE6A20A355BD00938C16 /* AppDelegate.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		989A002720A9EDBE00D6545C /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
+		989A002920A9EE2700D6545C /* CadastroMateriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroMateriaViewController.swift; sourceTree = "<group>"; };
+		989A002B20A9F5FD00D6545C /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
 		98A74EEB20A6078700CDCE27 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		98A74EEC20A6078700CDCE27 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
 		98CAFE6720A355BD00938C16 /* StudyClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +88,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		989A002420A9ED4600D6545C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98CAFE6C20A355BD00938C16 /* ViewController.swift */,
+				989A002920A9EE2700D6545C /* CadastroMateriaViewController.swift */,
+				989A002720A9EDBE00D6545C /* SubjectViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		989A002520A9ED5D00D6545C /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				98CAFE9820A36B9B00938C16 /* ExpandedTableViewCell.swift */,
+				98CAFE9E20A38E6A00938C16 /* ContractedTableViewCell.swift */,
+				989A002B20A9F5FD00D6545C /* SubjectTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		989A002620A9ED8700D6545C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				98CAFE6E20A355BD00938C16 /* Main.storyboard */,
+				98CAFE7320A355BE00938C16 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		98A74EEA20A6070400CDCE27 /* ExpandableHeaderView */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,14 +149,12 @@
 		98CAFE6920A355BD00938C16 /* StudyClub */ = {
 			isa = PBXGroup;
 			children = (
+				989A002620A9ED8700D6545C /* Storyboards */,
+				989A002520A9ED5D00D6545C /* TableViewCells */,
+				989A002420A9ED4600D6545C /* Views */,
 				98A74EEA20A6070400CDCE27 /* ExpandableHeaderView */,
 				98CAFE6A20A355BD00938C16 /* AppDelegate.swift */,
-				98CAFE6C20A355BD00938C16 /* ViewController.swift */,
-				98CAFE6E20A355BD00938C16 /* Main.storyboard */,
-				98CAFE9820A36B9B00938C16 /* ExpandedTableViewCell.swift */,
-				98CAFE9E20A38E6A00938C16 /* ContractedTableViewCell.swift */,
 				98CAFE7120A355BE00938C16 /* Assets.xcassets */,
-				98CAFE7320A355BE00938C16 /* LaunchScreen.storyboard */,
 				98CAFE7620A355BE00938C16 /* Info.plist */,
 			);
 			path = StudyClub;
@@ -277,10 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				98A74EED20A6078700CDCE27 /* Section.swift in Sources */,
+				989A002A20A9EE2700D6545C /* CadastroMateriaViewController.swift in Sources */,
 				98A74EEE20A6078700CDCE27 /* ExpandableHeaderView.swift in Sources */,
 				98CAFE6D20A355BD00938C16 /* ViewController.swift in Sources */,
 				98CAFE9920A36B9B00938C16 /* ExpandedTableViewCell.swift in Sources */,
 				98CAFE9F20A38E6B00938C16 /* ContractedTableViewCell.swift in Sources */,
+				989A002820A9EDBE00D6545C /* SubjectViewController.swift in Sources */,
+				989A002C20A9F5FD00D6545C /* SubjectTableViewCell.swift in Sources */,
 				98CAFE6B20A355BD00938C16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
