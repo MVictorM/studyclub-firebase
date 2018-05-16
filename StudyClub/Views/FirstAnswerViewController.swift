@@ -18,7 +18,6 @@ class FirstAnswerViewController: UIViewController {
     @IBOutlet weak var attchCount: UILabel!
     @IBOutlet weak var picsBtn: UIButton!
     @IBOutlet weak var picsCount: UILabel!
-    @IBOutlet weak var replyBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +29,6 @@ class FirstAnswerViewController: UIViewController {
         mQuestion.text = "Onde fica a fenda do bikine?"
         
         mReply.layer.borderWidth = 1
-        mReply.layer.borderColor = replyBtn.tintColor.cgColor
     }
 
     override func didReceiveMemoryWarning() {
