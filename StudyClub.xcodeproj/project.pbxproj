@@ -11,6 +11,18 @@
 		980511B520AC91F300C461F1 /* StudentMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511B420AC91F300C461F1 /* StudentMainViewController.swift */; };
 		980511B720AC9A8C00C461F1 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511B620AC9A8C00C461F1 /* StoryCollectionViewCell.swift */; };
 		980511B920ACAAD300C461F1 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511B820ACAAD300C461F1 /* StoryViewController.swift */; };
+		980511BD20ACBD7F00C461F1 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511BC20ACBD7F00C461F1 /* CustomViewCell.swift */; };
+		980511BF20ACBD8D00C461F1 /* QuestionsMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980511BE20ACBD8D00C461F1 /* QuestionsMain.storyboard */; };
+		980511C120ACBD9B00C461F1 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511C020ACBD9B00C461F1 /* QuestionsViewController.swift */; };
+		980511C320ACBDA700C461F1 /* ShowQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511C220ACBDA700C461F1 /* ShowQuestionViewController.swift */; };
+		980511CD20ACBFC500C461F1 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511CC20ACBFC500C461F1 /* RankingViewController.swift */; };
+		980511D020ACBFCA00C461F1 /* RankingMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980511CE20ACBFCA00C461F1 /* RankingMain.storyboard */; };
+		980511D220ACBFD100C461F1 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511D120ACBFD100C461F1 /* RankingTableViewCell.swift */; };
+		980511D420ACC07300C461F1 /* FirstAnswerMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980511D320ACC07300C461F1 /* FirstAnswerMain.storyboard */; };
+		980511D620ACC07D00C461F1 /* FirstAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511D520ACC07D00C461F1 /* FirstAnswerViewController.swift */; };
+		980511D820ACC21A00C461F1 /* AlunoMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980511D720ACC21900C461F1 /* AlunoMain.storyboard */; };
+		980511DA20ACC22100C461F1 /* AlunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511D920ACC22000C461F1 /* AlunoViewController.swift */; };
+		980511DC20ACC22A00C461F1 /* AlunoAddClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511DB20ACC22900C461F1 /* AlunoAddClassViewController.swift */; };
 		989A002820A9EDBE00D6545C /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A002720A9EDBE00D6545C /* SubjectViewController.swift */; };
 		989A002A20A9EE2700D6545C /* CadastroMateriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A002920A9EE2700D6545C /* CadastroMateriaViewController.swift */; };
 		989A002C20A9F5FD00D6545C /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A002B20A9F5FD00D6545C /* SubjectTableViewCell.swift */; };
@@ -49,6 +61,18 @@
 		980511B420AC91F300C461F1 /* StudentMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMainViewController.swift; sourceTree = "<group>"; };
 		980511B620AC9A8C00C461F1 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		980511B820ACAAD300C461F1 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StoryViewController.swift; path = StudyClub/Views/StoryViewController.swift; sourceTree = SOURCE_ROOT; };
+		980511BC20ACBD7F00C461F1 /* CustomViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
+		980511BE20ACBD8D00C461F1 /* QuestionsMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionsMain.storyboard; sourceTree = "<group>"; };
+		980511C020ACBD9B00C461F1 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		980511C220ACBDA700C461F1 /* ShowQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowQuestionViewController.swift; sourceTree = "<group>"; };
+		980511CC20ACBFC500C461F1 /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RankingViewController.swift; path = ../../../Bruno/StudyClub/Ranking/Ranking/RankingViewController.swift; sourceTree = "<group>"; };
+		980511CF20ACBFCA00C461F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../Bruno/StudyClub/Ranking/Ranking/Base.lproj/RankingMain.storyboard; sourceTree = "<group>"; };
+		980511D120ACBFD100C461F1 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RankingTableViewCell.swift; path = ../../../Bruno/StudyClub/Ranking/Ranking/RankingTableViewCell.swift; sourceTree = "<group>"; };
+		980511D320ACC07300C461F1 /* FirstAnswerMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FirstAnswerMain.storyboard; sourceTree = "<group>"; };
+		980511D520ACC07D00C461F1 /* FirstAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstAnswerViewController.swift; sourceTree = "<group>"; };
+		980511D720ACC21900C461F1 /* AlunoMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlunoMain.storyboard; sourceTree = "<group>"; };
+		980511D920ACC22000C461F1 /* AlunoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoViewController.swift; sourceTree = "<group>"; };
+		980511DB20ACC22900C461F1 /* AlunoAddClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoAddClassViewController.swift; sourceTree = "<group>"; };
 		989A002720A9EDBE00D6545C /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
 		989A002920A9EE2700D6545C /* CadastroMateriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroMateriaViewController.swift; sourceTree = "<group>"; };
 		989A002B20A9F5FD00D6545C /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
@@ -105,6 +129,12 @@
 				989A002720A9EDBE00D6545C /* SubjectViewController.swift */,
 				980511B220AC8DA700C461F1 /* PostQuestionViewController.swift */,
 				980511B420AC91F300C461F1 /* StudentMainViewController.swift */,
+				980511C020ACBD9B00C461F1 /* QuestionsViewController.swift */,
+				980511C220ACBDA700C461F1 /* ShowQuestionViewController.swift */,
+				980511CC20ACBFC500C461F1 /* RankingViewController.swift */,
+				980511D520ACC07D00C461F1 /* FirstAnswerViewController.swift */,
+				980511D920ACC22000C461F1 /* AlunoViewController.swift */,
+				980511DB20ACC22900C461F1 /* AlunoAddClassViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +146,8 @@
 				98CAFE9E20A38E6A00938C16 /* ContractedTableViewCell.swift */,
 				989A002B20A9F5FD00D6545C /* SubjectTableViewCell.swift */,
 				980511B620AC9A8C00C461F1 /* StoryCollectionViewCell.swift */,
+				980511BC20ACBD7F00C461F1 /* CustomViewCell.swift */,
+				980511D120ACBFD100C461F1 /* RankingTableViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -125,6 +157,10 @@
 			children = (
 				98CAFE6E20A355BD00938C16 /* Main.storyboard */,
 				98CAFE7320A355BE00938C16 /* LaunchScreen.storyboard */,
+				980511BE20ACBD8D00C461F1 /* QuestionsMain.storyboard */,
+				980511CE20ACBFCA00C461F1 /* RankingMain.storyboard */,
+				980511D320ACC07300C461F1 /* FirstAnswerMain.storyboard */,
+				980511D720ACC21900C461F1 /* AlunoMain.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -294,9 +330,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980511D420ACC07300C461F1 /* FirstAnswerMain.storyboard in Resources */,
+				980511D820ACC21A00C461F1 /* AlunoMain.storyboard in Resources */,
 				98CAFE7520A355BE00938C16 /* LaunchScreen.storyboard in Resources */,
 				98CAFE7220A355BE00938C16 /* Assets.xcassets in Resources */,
 				98CAFE7020A355BD00938C16 /* Main.storyboard in Resources */,
+				980511BF20ACBD8D00C461F1 /* QuestionsMain.storyboard in Resources */,
+				980511D020ACBFCA00C461F1 /* RankingMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,16 +363,24 @@
 			files = (
 				98A74EED20A6078700CDCE27 /* Section.swift in Sources */,
 				989A002A20A9EE2700D6545C /* CadastroMateriaViewController.swift in Sources */,
+				980511D220ACBFD100C461F1 /* RankingTableViewCell.swift in Sources */,
 				98A74EEE20A6078700CDCE27 /* ExpandableHeaderView.swift in Sources */,
+				980511D620ACC07D00C461F1 /* FirstAnswerViewController.swift in Sources */,
 				98CAFE6D20A355BD00938C16 /* ViewController.swift in Sources */,
 				980511B720AC9A8C00C461F1 /* StoryCollectionViewCell.swift in Sources */,
 				98CAFE9920A36B9B00938C16 /* ExpandedTableViewCell.swift in Sources */,
+				980511C320ACBDA700C461F1 /* ShowQuestionViewController.swift in Sources */,
 				98CAFE9F20A38E6B00938C16 /* ContractedTableViewCell.swift in Sources */,
+				980511DA20ACC22100C461F1 /* AlunoViewController.swift in Sources */,
 				980511B920ACAAD300C461F1 /* StoryViewController.swift in Sources */,
 				980511B520AC91F300C461F1 /* StudentMainViewController.swift in Sources */,
+				980511CD20ACBFC500C461F1 /* RankingViewController.swift in Sources */,
+				980511BD20ACBD7F00C461F1 /* CustomViewCell.swift in Sources */,
 				989A002820A9EDBE00D6545C /* SubjectViewController.swift in Sources */,
+				980511C120ACBD9B00C461F1 /* QuestionsViewController.swift in Sources */,
 				989A002C20A9F5FD00D6545C /* SubjectTableViewCell.swift in Sources */,
 				980511B320AC8DA700C461F1 /* PostQuestionViewController.swift in Sources */,
+				980511DC20ACC22A00C461F1 /* AlunoAddClassViewController.swift in Sources */,
 				98CAFE6B20A355BD00938C16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +417,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		980511CE20ACBFCA00C461F1 /* RankingMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				980511CF20ACBFCA00C461F1 /* Base */,
+			);
+			name = RankingMain.storyboard;
+			sourceTree = "<group>";
+		};
 		98CAFE6E20A355BD00938C16 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
