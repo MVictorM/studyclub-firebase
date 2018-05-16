@@ -15,16 +15,21 @@ struct cell {
     var replies: Int
 }
 
-class QuestionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class QuestionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var storiesCollectionView: UICollectionView!
     
     var cells = [cell]()
+    var chosenStory = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        storiesCollectionView.dataSource = self
+        storiesCollectionView.delegate = self
+
         cells = [
             cell(id: "spongebob",
                  subject: "Area ",
@@ -39,6 +44,7 @@ class QuestionsViewController: UIViewController, UITableViewDelegate, UITableVie
                  question: "Can I use percentage?",
                  replies: 6)
         ]
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -87,6 +93,36 @@ class QuestionsViewController: UIViewController, UITableViewDelegate, UITableVie
                 sqvc.replies = cells[indexPath!].replies
             }
         }
+        
+        else if segue.identifier == "showStorySegue" {
+            if let vc = segue.destination as? StoryViewController {
+                vc.studentPicture = UIImage(named: "")
+                vc.studentName = "Student " + String(chosenStory)
+                vc.questionTitle = "Question title " + String(chosenStory)
+                vc.question = "Question " + String(chosenStory)
+                vc.numberOfAttachedPictures = 1
+                vc.numberOfAttachedPDFs = 5
+            }
+        }
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "storyCollectionViewCell", for: indexPath) as! StoryCollectionViewCell
+        
+        cell.storyImageLabel.image = UIImage(named: "user")
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print (indexPath.row)
+        self.chosenStory = indexPath.row
+        self.performSegue(withIdentifier: "showStorySegue", sender: self)
     }
 }
 

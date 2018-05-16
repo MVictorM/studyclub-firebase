@@ -16,9 +16,7 @@
 		980511C120ACBD9B00C461F1 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511C020ACBD9B00C461F1 /* QuestionsViewController.swift */; };
 		980511C320ACBDA700C461F1 /* ShowQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511C220ACBDA700C461F1 /* ShowQuestionViewController.swift */; };
 		980511CD20ACBFC500C461F1 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511CC20ACBFC500C461F1 /* RankingViewController.swift */; };
-		980511D020ACBFCA00C461F1 /* RankingMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980511CE20ACBFCA00C461F1 /* RankingMain.storyboard */; };
 		980511D220ACBFD100C461F1 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511D120ACBFD100C461F1 /* RankingTableViewCell.swift */; };
-		980511D420ACC07300C461F1 /* FirstAnswerMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980511D320ACC07300C461F1 /* FirstAnswerMain.storyboard */; };
 		980511D620ACC07D00C461F1 /* FirstAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511D520ACC07D00C461F1 /* FirstAnswerViewController.swift */; };
 		980511D820ACC21A00C461F1 /* AlunoMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980511D720ACC21900C461F1 /* AlunoMain.storyboard */; };
 		980511DA20ACC22100C461F1 /* AlunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511D920ACC22000C461F1 /* AlunoViewController.swift */; };
@@ -66,9 +64,7 @@
 		980511C020ACBD9B00C461F1 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		980511C220ACBDA700C461F1 /* ShowQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowQuestionViewController.swift; sourceTree = "<group>"; };
 		980511CC20ACBFC500C461F1 /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RankingViewController.swift; path = ../../../Bruno/StudyClub/Ranking/Ranking/RankingViewController.swift; sourceTree = "<group>"; };
-		980511CF20ACBFCA00C461F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../Bruno/StudyClub/Ranking/Ranking/Base.lproj/RankingMain.storyboard; sourceTree = "<group>"; };
 		980511D120ACBFD100C461F1 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RankingTableViewCell.swift; path = ../../../Bruno/StudyClub/Ranking/Ranking/RankingTableViewCell.swift; sourceTree = "<group>"; };
-		980511D320ACC07300C461F1 /* FirstAnswerMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FirstAnswerMain.storyboard; sourceTree = "<group>"; };
 		980511D520ACC07D00C461F1 /* FirstAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstAnswerViewController.swift; sourceTree = "<group>"; };
 		980511D720ACC21900C461F1 /* AlunoMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlunoMain.storyboard; sourceTree = "<group>"; };
 		980511D920ACC22000C461F1 /* AlunoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoViewController.swift; sourceTree = "<group>"; };
@@ -155,11 +151,9 @@
 		989A002620A9ED8700D6545C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				98CAFE6E20A355BD00938C16 /* Main.storyboard */,
 				98CAFE7320A355BE00938C16 /* LaunchScreen.storyboard */,
+				98CAFE6E20A355BD00938C16 /* Main.storyboard */,
 				980511BE20ACBD8D00C461F1 /* QuestionsMain.storyboard */,
-				980511CE20ACBFCA00C461F1 /* RankingMain.storyboard */,
-				980511D320ACC07300C461F1 /* FirstAnswerMain.storyboard */,
 				980511D720ACC21900C461F1 /* AlunoMain.storyboard */,
 			);
 			path = Storyboards;
@@ -330,13 +324,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980511D420ACC07300C461F1 /* FirstAnswerMain.storyboard in Resources */,
 				980511D820ACC21A00C461F1 /* AlunoMain.storyboard in Resources */,
 				98CAFE7520A355BE00938C16 /* LaunchScreen.storyboard in Resources */,
 				98CAFE7220A355BE00938C16 /* Assets.xcassets in Resources */,
 				98CAFE7020A355BD00938C16 /* Main.storyboard in Resources */,
 				980511BF20ACBD8D00C461F1 /* QuestionsMain.storyboard in Resources */,
-				980511D020ACBFCA00C461F1 /* RankingMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,14 +409,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		980511CE20ACBFCA00C461F1 /* RankingMain.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				980511CF20ACBFCA00C461F1 /* Base */,
-			);
-			name = RankingMain.storyboard;
-			sourceTree = "<group>";
-		};
 		98CAFE6E20A355BD00938C16 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
