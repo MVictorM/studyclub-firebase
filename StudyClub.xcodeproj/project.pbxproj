@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		980511B320AC8DA700C461F1 /* PostQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511B220AC8DA700C461F1 /* PostQuestionViewController.swift */; };
+		980511B520AC91F300C461F1 /* StudentMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511B420AC91F300C461F1 /* StudentMainViewController.swift */; };
+		980511B720AC9A8C00C461F1 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511B620AC9A8C00C461F1 /* StoryCollectionViewCell.swift */; };
+		980511B920ACAAD300C461F1 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511B820ACAAD300C461F1 /* StoryViewController.swift */; };
 		989A002820A9EDBE00D6545C /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A002720A9EDBE00D6545C /* SubjectViewController.swift */; };
 		989A002A20A9EE2700D6545C /* CadastroMateriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A002920A9EE2700D6545C /* CadastroMateriaViewController.swift */; };
 		989A002C20A9F5FD00D6545C /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A002B20A9F5FD00D6545C /* SubjectTableViewCell.swift */; };
@@ -43,6 +46,9 @@
 
 /* Begin PBXFileReference section */
 		980511B220AC8DA700C461F1 /* PostQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostQuestionViewController.swift; sourceTree = "<group>"; };
+		980511B420AC91F300C461F1 /* StudentMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMainViewController.swift; sourceTree = "<group>"; };
+		980511B620AC9A8C00C461F1 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		980511B820ACAAD300C461F1 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StoryViewController.swift; path = StudyClub/Views/StoryViewController.swift; sourceTree = SOURCE_ROOT; };
 		989A002720A9EDBE00D6545C /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
 		989A002920A9EE2700D6545C /* CadastroMateriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroMateriaViewController.swift; sourceTree = "<group>"; };
 		989A002B20A9F5FD00D6545C /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
@@ -93,10 +99,12 @@
 		989A002420A9ED4600D6545C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				980511B820ACAAD300C461F1 /* StoryViewController.swift */,
 				98CAFE6C20A355BD00938C16 /* ViewController.swift */,
 				989A002920A9EE2700D6545C /* CadastroMateriaViewController.swift */,
 				989A002720A9EDBE00D6545C /* SubjectViewController.swift */,
 				980511B220AC8DA700C461F1 /* PostQuestionViewController.swift */,
+				980511B420AC91F300C461F1 /* StudentMainViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,6 +115,7 @@
 				98CAFE9820A36B9B00938C16 /* ExpandedTableViewCell.swift */,
 				98CAFE9E20A38E6A00938C16 /* ContractedTableViewCell.swift */,
 				989A002B20A9F5FD00D6545C /* SubjectTableViewCell.swift */,
+				980511B620AC9A8C00C461F1 /* StoryCollectionViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -316,8 +325,11 @@
 				989A002A20A9EE2700D6545C /* CadastroMateriaViewController.swift in Sources */,
 				98A74EEE20A6078700CDCE27 /* ExpandableHeaderView.swift in Sources */,
 				98CAFE6D20A355BD00938C16 /* ViewController.swift in Sources */,
+				980511B720AC9A8C00C461F1 /* StoryCollectionViewCell.swift in Sources */,
 				98CAFE9920A36B9B00938C16 /* ExpandedTableViewCell.swift in Sources */,
 				98CAFE9F20A38E6B00938C16 /* ContractedTableViewCell.swift in Sources */,
+				980511B920ACAAD300C461F1 /* StoryViewController.swift in Sources */,
+				980511B520AC91F300C461F1 /* StudentMainViewController.swift in Sources */,
 				989A002820A9EDBE00D6545C /* SubjectViewController.swift in Sources */,
 				989A002C20A9F5FD00D6545C /* SubjectTableViewCell.swift in Sources */,
 				980511B320AC8DA700C461F1 /* PostQuestionViewController.swift in Sources */,

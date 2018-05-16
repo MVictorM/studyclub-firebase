@@ -20,6 +20,8 @@ class PostQuestionViewController: UIViewController {
         
         numberOfPDFsLabel.text = "+"
         numberOfPicturesLabel.text = "+"
+        
+        questionLabel.layer.borderWidth = 1
     }
 
     override func didReceiveMemoryWarning() {
