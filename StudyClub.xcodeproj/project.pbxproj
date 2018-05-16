@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980511B320AC8DA700C461F1 /* PostQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511B220AC8DA700C461F1 /* PostQuestionViewController.swift */; };
 		989A002820A9EDBE00D6545C /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A002720A9EDBE00D6545C /* SubjectViewController.swift */; };
 		989A002A20A9EE2700D6545C /* CadastroMateriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A002920A9EE2700D6545C /* CadastroMateriaViewController.swift */; };
 		989A002C20A9F5FD00D6545C /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A002B20A9F5FD00D6545C /* SubjectTableViewCell.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		980511B220AC8DA700C461F1 /* PostQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostQuestionViewController.swift; sourceTree = "<group>"; };
 		989A002720A9EDBE00D6545C /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
 		989A002920A9EE2700D6545C /* CadastroMateriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroMateriaViewController.swift; sourceTree = "<group>"; };
 		989A002B20A9F5FD00D6545C /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				98CAFE6C20A355BD00938C16 /* ViewController.swift */,
 				989A002920A9EE2700D6545C /* CadastroMateriaViewController.swift */,
 				989A002720A9EDBE00D6545C /* SubjectViewController.swift */,
+				980511B220AC8DA700C461F1 /* PostQuestionViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				98CAFE9F20A38E6B00938C16 /* ContractedTableViewCell.swift in Sources */,
 				989A002820A9EDBE00D6545C /* SubjectViewController.swift in Sources */,
 				989A002C20A9F5FD00D6545C /* SubjectTableViewCell.swift in Sources */,
+				980511B320AC8DA700C461F1 /* PostQuestionViewController.swift in Sources */,
 				98CAFE6B20A355BD00938C16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
