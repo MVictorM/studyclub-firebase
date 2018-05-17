@@ -16,7 +16,7 @@ struct Rank {
     var expanded: Bool
 }
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class RankingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     var ranking = [Rank]()

@@ -75,6 +75,7 @@ class LoginController: UIViewController, UITextFieldDelegate {
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     let newViewController = storyBoard.instantiateViewController(withIdentifier: "studentArea") as! QuestionsViewController
                     self.present(newViewController, animated: true, completion: nil)
+//                    self.performSegue(withIdentifier: "showStudentArea", sender: self)
                     
                 } else {
                     

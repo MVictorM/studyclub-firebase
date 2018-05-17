@@ -13,8 +13,8 @@ class StoryViewController: UIViewController {
     @IBOutlet weak var studentNameLabel: UILabel!
     @IBOutlet weak var questionTitleLabel: UITextField!
     @IBOutlet weak var questionLabel: UITextView!
-    @IBOutlet weak var numberOfAttachedPicturesLabel: UILabel!
     @IBOutlet weak var numberOfAttachedPDFsLabel: UILabel!
+    @IBOutlet weak var numberOfAttachedPicturesLabel: UILabel!
     
     var studentPicture:UIImage?
     var studentName:String = "Student Name"

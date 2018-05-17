@@ -20,8 +20,17 @@ class PostQuestionViewController: UIViewController {
         
         numberOfPDFsLabel.text = "+"
         numberOfPicturesLabel.text = "+"
-        
         questionLabel.layer.borderWidth = 1
+        questionLabel.layer.borderColor = UIColor(
+            red: 71.0/255.0,
+            green: 137.0/255.0,
+            blue: 181.0/255.0,
+            alpha: 1.0
+            ).cgColor
+        
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,5 +43,7 @@ class PostQuestionViewController: UIViewController {
     @IBAction func attachPictureAction(_ sender: UIButton) {
     }
     @IBAction func postQuestionAction(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
+    
 }

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		449CDCE3C96FCBE2B172BC39 /* Pods_StudyClubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F38FB56E71BCB30E0E087B /* Pods_StudyClubTests.framework */; };
 		451D81B1AF3404FDFFE11E8F /* Pods_StudyClubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5973E06BFF21A4DFB188A948 /* Pods_StudyClubUITests.framework */; };
+		505D500620AE13260015AF82 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D500520AE13260015AF82 /* RankingTableViewCell.swift */; };
+		505D500820AE133E0015AF82 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D500720AE133E0015AF82 /* RankingViewController.swift */; };
+		505D500A20AE14040015AF82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 505D500920AE14040015AF82 /* GoogleService-Info.plist */; };
 		980511B320AC8DA700C461F1 /* PostQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511B220AC8DA700C461F1 /* PostQuestionViewController.swift */; };
 		980511B520AC91F300C461F1 /* StudentMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511B420AC91F300C461F1 /* StudentMainViewController.swift */; };
 		980511B720AC9A8C00C461F1 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511B620AC9A8C00C461F1 /* StoryCollectionViewCell.swift */; };
@@ -16,8 +19,6 @@
 		980511BD20ACBD7F00C461F1 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511BC20ACBD7F00C461F1 /* CustomViewCell.swift */; };
 		980511C120ACBD9B00C461F1 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511C020ACBD9B00C461F1 /* QuestionsViewController.swift */; };
 		980511C320ACBDA700C461F1 /* ShowQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511C220ACBDA700C461F1 /* ShowQuestionViewController.swift */; };
-		980511CD20ACBFC500C461F1 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511CC20ACBFC500C461F1 /* RankingViewController.swift */; };
-		980511D220ACBFD100C461F1 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511D120ACBFD100C461F1 /* RankingTableViewCell.swift */; };
 		980511D620ACC07D00C461F1 /* FirstAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511D520ACC07D00C461F1 /* FirstAnswerViewController.swift */; };
 		980511D820ACC21A00C461F1 /* AlunoMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980511D720ACC21900C461F1 /* AlunoMain.storyboard */; };
 		980511DA20ACC22100C461F1 /* AlunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980511D920ACC22000C461F1 /* AlunoViewController.swift */; };
@@ -36,7 +37,6 @@
 		98CAFE8B20A355BF00938C16 /* StudyClubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFE8A20A355BF00938C16 /* StudyClubUITests.swift */; };
 		98CAFE9920A36B9B00938C16 /* ExpandedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFE9820A36B9B00938C16 /* ExpandedTableViewCell.swift */; };
 		98CAFE9F20A38E6B00938C16 /* ContractedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFE9E20A38E6A00938C16 /* ContractedTableViewCell.swift */; };
-		98D06A1F20ACE2210062D530 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98FE664320ACE0EB009AF660 /* GoogleService-Info.plist */; };
 		98FE663E20ACD81E009AF660 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE663D20ACD81E009AF660 /* Home.storyboard */; };
 		98FE664020ACD827009AF660 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE663F20ACD827009AF660 /* LoginController.swift */; };
 		98FE664220ACD82E009AF660 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE664120ACD82E009AF660 /* RegisterController.swift */; };
@@ -61,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		505D500520AE13260015AF82 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
+		505D500720AE133E0015AF82 /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		505D500920AE14040015AF82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		56FA7C4A2114DC6BF5D598D5 /* Pods-StudyClubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyClubTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyClubTests/Pods-StudyClubTests.release.xcconfig"; sourceTree = "<group>"; };
 		5973E06BFF21A4DFB188A948 /* Pods_StudyClubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyClubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F38FB56E71BCB30E0E087B /* Pods_StudyClubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyClubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,8 +77,6 @@
 		980511BC20ACBD7F00C461F1 /* CustomViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
 		980511C020ACBD9B00C461F1 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		980511C220ACBDA700C461F1 /* ShowQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowQuestionViewController.swift; sourceTree = "<group>"; };
-		980511CC20ACBFC500C461F1 /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RankingViewController.swift; path = ../../../Bruno/StudyClub/Ranking/Ranking/RankingViewController.swift; sourceTree = "<group>"; };
-		980511D120ACBFD100C461F1 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RankingTableViewCell.swift; path = ../../../Bruno/StudyClub/Ranking/Ranking/RankingTableViewCell.swift; sourceTree = "<group>"; };
 		980511D520ACC07D00C461F1 /* FirstAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstAnswerViewController.swift; sourceTree = "<group>"; };
 		980511D720ACC21900C461F1 /* AlunoMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlunoMain.storyboard; sourceTree = "<group>"; };
 		980511D920ACC22000C461F1 /* AlunoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +104,6 @@
 		98FE663D20ACD81E009AF660 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		98FE663F20ACD827009AF660 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		98FE664120ACD82E009AF660 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
-		98FE664320ACE0EB009AF660 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "/Users/gabriel-bandeira/Documents/swift ios/StudyClub/StudyClub/GoogleService-Info.plist"; sourceTree = "<absolute>"; };
 		B8E7CF9D88698418956E834A /* Pods-StudyClub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyClub.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyClub/Pods-StudyClub.release.xcconfig"; sourceTree = "<group>"; };
 		BA4CB0B8060025C59B715AEC /* Pods_StudyClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B50B59FB8C84FC75E72574 /* Pods-StudyClubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyClubUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyClubUITests/Pods-StudyClubUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 				980511B420AC91F300C461F1 /* StudentMainViewController.swift */,
 				980511C020ACBD9B00C461F1 /* QuestionsViewController.swift */,
 				980511C220ACBDA700C461F1 /* ShowQuestionViewController.swift */,
-				980511CC20ACBFC500C461F1 /* RankingViewController.swift */,
+				505D500720AE133E0015AF82 /* RankingViewController.swift */,
 				980511D520ACC07D00C461F1 /* FirstAnswerViewController.swift */,
 				980511D920ACC22000C461F1 /* AlunoViewController.swift */,
 				980511DB20ACC22900C461F1 /* AlunoAddClassViewController.swift */,
@@ -179,7 +179,7 @@
 				989A002B20A9F5FD00D6545C /* SubjectTableViewCell.swift */,
 				980511B620AC9A8C00C461F1 /* StoryCollectionViewCell.swift */,
 				980511BC20ACBD7F00C461F1 /* CustomViewCell.swift */,
-				980511D120ACBFD100C461F1 /* RankingTableViewCell.swift */,
+				505D500520AE13260015AF82 /* RankingTableViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 		98CAFE6920A355BD00938C16 /* StudyClub */ = {
 			isa = PBXGroup;
 			children = (
-				98FE664320ACE0EB009AF660 /* GoogleService-Info.plist */,
+				505D500920AE14040015AF82 /* GoogleService-Info.plist */,
 				989A002620A9ED8700D6545C /* Storyboards */,
 				989A002520A9ED5D00D6545C /* TableViewCells */,
 				989A002420A9ED4600D6545C /* Views */,
@@ -382,7 +382,7 @@
 				98CAFE7520A355BE00938C16 /* LaunchScreen.storyboard in Resources */,
 				98CAFE7220A355BE00938C16 /* Assets.xcassets in Resources */,
 				98CAFE7020A355BD00938C16 /* Main.storyboard in Resources */,
-				98D06A1F20ACE2210062D530 /* GoogleService-Info.plist in Resources */,
+				505D500A20AE14040015AF82 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +502,7 @@
 			files = (
 				98A74EED20A6078700CDCE27 /* Section.swift in Sources */,
 				989A002A20A9EE2700D6545C /* CadastroMateriaViewController.swift in Sources */,
-				980511D220ACBFD100C461F1 /* RankingTableViewCell.swift in Sources */,
+				505D500620AE13260015AF82 /* RankingTableViewCell.swift in Sources */,
 				98FE664220ACD82E009AF660 /* RegisterController.swift in Sources */,
 				98A74EEE20A6078700CDCE27 /* ExpandableHeaderView.swift in Sources */,
 				980511D620ACC07D00C461F1 /* FirstAnswerViewController.swift in Sources */,
@@ -515,7 +515,6 @@
 				98FE664020ACD827009AF660 /* LoginController.swift in Sources */,
 				980511B920ACAAD300C461F1 /* StoryViewController.swift in Sources */,
 				980511B520AC91F300C461F1 /* StudentMainViewController.swift in Sources */,
-				980511CD20ACBFC500C461F1 /* RankingViewController.swift in Sources */,
 				980511BD20ACBD7F00C461F1 /* CustomViewCell.swift in Sources */,
 				989A002820A9EDBE00D6545C /* SubjectViewController.swift in Sources */,
 				980511C120ACBD9B00C461F1 /* QuestionsViewController.swift in Sources */,
@@ -523,6 +522,7 @@
 				980511B320AC8DA700C461F1 /* PostQuestionViewController.swift in Sources */,
 				980511DC20ACC22A00C461F1 /* AlunoAddClassViewController.swift in Sources */,
 				98CAFE6B20A355BD00938C16 /* AppDelegate.swift in Sources */,
+				505D500820AE133E0015AF82 /* RankingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

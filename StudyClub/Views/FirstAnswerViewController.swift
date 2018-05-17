@@ -29,6 +29,12 @@ class FirstAnswerViewController: UIViewController {
         mQuestion.text = "Onde fica a fenda do bikine?"
         
         mReply.layer.borderWidth = 1
+        mReply.layer.borderColor = UIColor(
+            red: 71.0/255.0,
+            green: 137.0/255.0,
+            blue: 181.0/255.0,
+            alpha: 1.0
+            ).cgColor
     }
 
     override func didReceiveMemoryWarning() {

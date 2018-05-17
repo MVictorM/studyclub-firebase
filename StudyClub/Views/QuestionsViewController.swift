@@ -15,7 +15,8 @@ struct cell {
     var replies: Int
 }
 
-class QuestionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
+class QuestionsViewController: UIViewController, UITableViewDelegate,
+UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var storiesCollectionView: UICollectionView!
     
