@@ -7,23 +7,26 @@
 //
 
 import UIKit
+import Firebase
 
 struct cell {
     var id: String          // id: username
     var subject: String
     var question: String
     var replies: Int
+    var author: String
 }
 
 class QuestionsViewController: UIViewController, UITableViewDelegate,
 UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var storiesCollectionView: UICollectionView!
-    
+    //CRIAR OUTLET ACTIVITY INDICATOR
     var cells = [cell]()
     var chosenStory = 0
     
     override func viewDidLoad() {
+        let db = Firestore.firestore()
         super.viewDidLoad()
         
         tableView.delegate = self
@@ -31,20 +34,28 @@ UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
         storiesCollectionView.dataSource = self
         storiesCollectionView.delegate = self
 
-        cells = [
-            cell(id: "spongebob",
-                 subject: "Area ",
-                 question: "How to calculate circles' area?",
-                 replies: 2),
-            cell(id: "patrick",
-                 subject: "Percentage",
-                 question: "How to use with the rule of three?",
-                 replies: 1),
-            cell(id: "sandy",
-                 subject: "Logarithm",
-                 question: "Can I use percentage?",
-                 replies: 6)
-        ]
+        cells = []
+        
+        db.collection("perguntas").whereField("answersNumber", isGreaterThanOrEqualTo: 1)
+            .getDocuments() { (querySnapshot, err) in
+                //self.loadingIndicator.stopAnimating()
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        self.cells.append(
+                            cell(
+                                id: document.documentID,
+                                subject: document.data()["subject"] as! String,
+                                question: document.data()["question"] as! String,
+                                replies: document.data()["answersNumber"] as! Int,
+                                author: document.data()["author"] as! String
+                            )
+                        )
+                    }
+                    self.tableView.reloadData()
+                }
+        }
         
     }
 
