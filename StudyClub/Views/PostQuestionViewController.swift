@@ -43,6 +43,7 @@ class PostQuestionViewController: UIViewController {
     @IBAction func attachPictureAction(_ sender: UIButton) {
     }
     @IBAction func postQuestionAction(_ sender: UIBarButtonItem) {
+        
     }
     @IBAction func postAnswerAction(_ sender: UIBarButtonItem) {
     }

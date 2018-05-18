@@ -100,6 +100,7 @@ class RegisterController: UIViewController, UITextFieldDelegate {
                 
                 if error == nil {
                     print("Cadastro realizado com sucesso")
+                    
                     //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
                     self.db.collection("usuarios")
                         .document(self.emailTextField.text!)
