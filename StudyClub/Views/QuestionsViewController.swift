@@ -24,6 +24,7 @@ UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     var cells = [cell]()
     var chosenStory = 0
+    let storyUsers = ["patrick", "sandy", "spongebob", "sandy", "spongebob", "patrick"]
     
     override func viewDidLoad() {
         let db = Firestore.firestore()
@@ -45,7 +46,7 @@ UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
                     for document in querySnapshot!.documents {
                         self.cells.append(
                             cell(
-                                id: document.documentID,
+                                id: document.data()["author"] as! String,
                                 subject: document.data()["subject"] as! String,
                                 question: document.data()["question"] as! String,
                                 replies: document.data()["answersNumber"] as! Int,
@@ -74,7 +75,7 @@ UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customQuestionCell") as! QuestionViewCell
-        cell.mImage.image = UIImage(named: cells[indexPath.row].id)
+        cell.mImage.image = UIImage(named: cells[indexPath.row].author)
         cell.mSubject.text = cells[indexPath.row].subject
         cell.mActivities.text = String(cells[indexPath.row].replies)
         
@@ -119,13 +120,13 @@ UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return storyUsers.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "storyCollectionViewCell", for: indexPath) as! StoryCollectionViewCell
         
-        cell.storyImageLabel.image = UIImage(named: "user")
+        cell.storyImageLabel.image = UIImage(named: storyUsers[indexPath.row])
         
         return cell
     }

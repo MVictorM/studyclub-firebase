@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class PostQuestionViewController: UIViewController {
 
@@ -14,6 +16,8 @@ class PostQuestionViewController: UIViewController {
     @IBOutlet weak var questionLabel: UITextView!
     @IBOutlet weak var numberOfPDFsLabel: UILabel!
     @IBOutlet weak var numberOfPicturesLabel: UILabel!
+    
+    let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +47,25 @@ class PostQuestionViewController: UIViewController {
     @IBAction func attachPictureAction(_ sender: UIButton) {
     }
     @IBAction func postQuestionAction(_ sender: UIBarButtonItem) {
+        let user = Auth.auth().currentUser
+        if((user) != nil) {
+            self.db.collection("perguntas")
+                .document()
+                .setData([
+                    "question": self.questionLabel.text,
+                    "subject": self.titleLabel.text as! String,
+                    "author": "patrick",
+                    "answersNumber": 3
+                    
+                ]) { err in
+                    if let err = err {
+                        print("Error writing document: \(err)")
+                    } else {
+                        self.navigationController?.popToRootViewController(animated: true)
+                        print("Document successfully written!")
+                    }
+            }
+        }
         
     }
     @IBAction func postAnswerAction(_ sender: UIBarButtonItem) {
