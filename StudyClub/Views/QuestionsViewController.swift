@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 struct cell {
-    var id: String          // id: username
+    var id: String
     var subject: String
     var question: String
     var replies: Int
@@ -21,24 +21,26 @@ class QuestionsViewController: UIViewController, UITableViewDelegate,
 UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var storiesCollectionView: UICollectionView!
-    //CRIAR OUTLET ACTIVITY INDICATOR
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     var cells = [cell]()
     var chosenStory = 0
     
     override func viewDidLoad() {
-        let db = Firestore.firestore()
         super.viewDidLoad()
         
+        let db = Firestore.firestore()
         tableView.delegate = self
         tableView.dataSource = self
         storiesCollectionView.dataSource = self
         storiesCollectionView.delegate = self
         
+        self.loadingIndicator.startAnimating()
+        
         cells = []
         
         db.collection("perguntas").whereField("answersNumber", isGreaterThanOrEqualTo: 1)
             .getDocuments() { (querySnapshot, err) in
-                //self.loadingIndicator.stopAnimating()
+                self.loadingIndicator.stopAnimating()
                 if let err = err {
                     print("Error getting documents: \(err)")
                 } else {

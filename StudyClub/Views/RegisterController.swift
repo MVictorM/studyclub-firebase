@@ -27,6 +27,11 @@ class RegisterController: UIViewController, UITextFieldDelegate {
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
         self.setTypeAluno(self.alunoBtn)
+        
+        
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,9 +41,16 @@ class RegisterController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
-        if(emailTextField.text != "" && passwordTextField.text != ""){
+        if(emailTextField.text != "" && passwordTextField.text != "" && nameTextField.text != ""){
             createAccountAction(self)
+        } else if (emailTextField.text == "") {
+            emailTextField.becomeFirstResponder()
+        } else if(passwordTextField.text == "") {
+            passwordTextField.becomeFirstResponder()
+        } else if(nameTextField.text == "") {
+            nameTextField.becomeFirstResponder()
         }
+        
         return true
     }
     

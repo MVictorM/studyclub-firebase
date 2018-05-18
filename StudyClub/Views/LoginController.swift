@@ -12,20 +12,17 @@ import FirebaseAuth
 
 class LoginController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var registrarBtn: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
-        
-        self.logo.image = UIImage(named: "logo.jpg")
-        
         
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         tap.cancelsTouchesInView = false
@@ -68,16 +65,25 @@ class LoginController: UIViewController, UITextFieldDelegate {
             Auth.auth().signIn(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
                 
                 if error == nil {
-                    
-                    //Print into the console if successfully logged in
-                    print("You have successfully logged in")
-//                    print (user.)
-//                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "studentArea") as! QuestionsViewController
-//                    self.present(newViewController, animated: true, completion: nil)
-                    
-                    // Present modally segue!
-                    self.performSegue(withIdentifier: "showStudentArea", sender: self)
+                    //self.performSegue(withIdentifier: "showStudentArea", sender: self)
+                    let user = Auth.auth().currentUser
+                    if((user) != nil) {
+                        let userData = self.db.collection("usuarios").document((user?.email)!)
+                        
+                        userData.getDocument { (document, error) in
+                            if let document = document, document.exists {
+                                if(document.data()!["tipo"] as! String == "Aluno") {
+                                    self.performSegue(withIdentifier: "showStudentArea", sender: self)
+                                } else if (document.data()!["tipo"] as! String == "Professor") {
+                                    self.performSegue(withIdentifier: "showTeacherArea", sender: self)
+                                }
+                            } else {
+                                print("Document does not exist")
+                            }
+                        }
+                    } else {
+                        
+                    }
             
                 } else {
                     
