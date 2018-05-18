@@ -21,14 +21,14 @@ class QuestionsViewController: UIViewController, UITableViewDelegate,
 UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var storiesCollectionView: UICollectionView!
-    //CRIAR OUTLET ACTIVITY INDICATOR
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     var cells = [cell]()
     var chosenStory = 0
     
     override func viewDidLoad() {
         let db = Firestore.firestore()
         super.viewDidLoad()
-        
+        self.loadingIndicator.startAnimating()
         tableView.delegate = self
         tableView.dataSource = self
         storiesCollectionView.dataSource = self
@@ -38,7 +38,7 @@ UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
         
         db.collection("perguntas").whereField("answersNumber", isGreaterThanOrEqualTo: 1)
             .getDocuments() { (querySnapshot, err) in
-                //self.loadingIndicator.stopAnimating()
+                self.loadingIndicator.stopAnimating()
                 if let err = err {
                     print("Error getting documents: \(err)")
                 } else {

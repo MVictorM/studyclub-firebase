@@ -12,7 +12,6 @@ import FirebaseAuth
 
 class LoginController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var registrarBtn: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -23,9 +22,6 @@ class LoginController: UIViewController, UITextFieldDelegate {
         
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
-        
-        self.logo.image = UIImage(named: "logo.jpg")
-        
         
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         tap.cancelsTouchesInView = false
