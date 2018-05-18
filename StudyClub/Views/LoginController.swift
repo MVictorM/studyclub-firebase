@@ -72,11 +72,13 @@ class LoginController: UIViewController, UITextFieldDelegate {
                     //Print into the console if successfully logged in
                     print("You have successfully logged in")
 //                    print (user.)
-                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "studentArea") as! QuestionsViewController
-                    self.present(newViewController, animated: true, completion: nil)
-//                    self.performSegue(withIdentifier: "showStudentArea", sender: self)
+//                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "studentArea") as! QuestionsViewController
+//                    self.present(newViewController, animated: true, completion: nil)
                     
+                    // Present modally segue!
+                    self.performSegue(withIdentifier: "showStudentArea", sender: self)
+            
                 } else {
                     
                     //Tells the user that there is an error and then gets firebase to tell them the error

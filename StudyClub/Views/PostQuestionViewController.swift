@@ -26,7 +26,7 @@ class PostQuestionViewController: UIViewController {
             green: 137.0/255.0,
             blue: 181.0/255.0,
             alpha: 1.0
-            ).cgColor
+        ).cgColor
         
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         tap.cancelsTouchesInView = false
@@ -43,7 +43,8 @@ class PostQuestionViewController: UIViewController {
     @IBAction func attachPictureAction(_ sender: UIButton) {
     }
     @IBAction func postQuestionAction(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+    }
+    @IBAction func postAnswerAction(_ sender: UIBarButtonItem) {
     }
     
 }

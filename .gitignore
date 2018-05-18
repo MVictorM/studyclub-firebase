@@ -1,0 +1,10 @@
+# Exclude OS X folder attributes
+.DS_Store
+ 
+# Xcode
+*.xcworkspace
+xcuserdata
+
+# Podsfile
+Podfile.lock
+Pods

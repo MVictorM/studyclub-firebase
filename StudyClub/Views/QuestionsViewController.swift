@@ -33,7 +33,7 @@ UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
         tableView.dataSource = self
         storiesCollectionView.dataSource = self
         storiesCollectionView.delegate = self
-
+        
         cells = []
         
         db.collection("perguntas").whereField("answersNumber", isGreaterThanOrEqualTo: 1)
@@ -118,7 +118,6 @@ UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
         }
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -136,5 +135,6 @@ UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
         self.chosenStory = indexPath.row
         self.performSegue(withIdentifier: "showStorySegue", sender: self)
     }
+    
 }
 

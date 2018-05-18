@@ -42,11 +42,11 @@ class ShowQuestionViewController: UIViewController, UITableViewDelegate, UITable
         
         answers = [
             Answer(id: "patrick",
-                   answer: "Found two links might be useful: http://glg.xDviz & http://glg.Ahos",
+                   answer: "Encontrei dois links que podem ser úteis: http://glg.xDviz & http://glg.Ahos",
                    pics: 0,
                    hearts: 4),
             Answer(id: "sandy",
-                   answer: "Same here",
+                   answer: "Tem exemplo na página 41",
                    pics: 0,
                    hearts: 0)
         ]
