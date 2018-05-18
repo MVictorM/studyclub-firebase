@@ -11,7 +11,7 @@ import Firebase
 import FirebaseAuth
 
 class PostQuestionViewController: UIViewController {
-
+    
     @IBOutlet weak var titleLabel: UITextField!
     @IBOutlet weak var questionLabel: UITextView!
     @IBOutlet weak var numberOfPDFsLabel: UILabel!
@@ -30,18 +30,18 @@ class PostQuestionViewController: UIViewController {
             green: 137.0/255.0,
             blue: 181.0/255.0,
             alpha: 1.0
-        ).cgColor
+            ).cgColor
         
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-
+    
     @IBAction func attachPDFAction(_ sender: UIButton) {
     }
     @IBAction func attachPictureAction(_ sender: UIButton) {
@@ -69,6 +69,9 @@ class PostQuestionViewController: UIViewController {
         
     }
     @IBAction func postAnswerAction(_ sender: UIBarButtonItem) {
+        self.navigationController?.popToRootViewController(
+            animated: true
+        )
     }
     
 }

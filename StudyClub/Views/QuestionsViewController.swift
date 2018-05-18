@@ -109,8 +109,8 @@ UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
         
         else if segue.identifier == "showStorySegue" {
             if let vc = segue.destination as? StoryViewController {
-                vc.studentPicture = UIImage(named: "")
-                vc.studentName = "Student " + String(chosenStory)
+                vc.studentPicture = UIImage(named: storyUsers[chosenStory])
+                vc.studentName = storyUsers[chosenStory]
                 vc.questionTitle = "Question title " + String(chosenStory)
                 vc.question = "Question " + String(chosenStory)
                 vc.numberOfAttachedPictures = 1

@@ -41,10 +41,6 @@ class RegisterController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
-        if(emailTextField.text != "" && passwordTextField.text != ""){
-            createAccountAction(self)
-        }
-        
         if(emailTextField.text != "" && passwordTextField.text != "" && nameTextField.text != ""){
             createAccountAction(self)
         } else if (emailTextField.text == "") {
@@ -112,10 +108,12 @@ class RegisterController: UIViewController, UITextFieldDelegate {
                                 print("Error writing document: \(err)")
                             } else {
                                 print("Document successfully written!")
+                                self.navigationController?.popToRootViewController(
+                                    animated: true
+                                )
                             }
+                            
                     }
-                    self.navigationController?.popToRootViewController(animated: true)
-                    
                 } else {
                     let alertController = UIAlertController(
                         title: "Error",

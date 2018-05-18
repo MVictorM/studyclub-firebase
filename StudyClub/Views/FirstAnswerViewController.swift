@@ -42,9 +42,9 @@ class FirstAnswerViewController: UIViewController {
     }
 
     @IBAction func replyAction(_ sender: Any) {
-        print(mReply.text)
-        
-        // PerfomSegue...
+        self.navigationController?.popToRootViewController(
+            animated: true
+        )
     }
 }
 

@@ -72,8 +72,13 @@ class LoginController: UIViewController, UITextFieldDelegate {
 //                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "studentArea") as! QuestionsViewController
 //                    self.present(newViewController, animated: true, completion: nil)
                     
-                    // Present modally segue!
-                    self.performSegue(withIdentifier: "showStudentArea", sender: self)
+                    // Present modally segue! by gabriel bandeira
+                    if(self.emailTextField.text == "hpbl@cin.ufpe.br") {
+                            self.performSegue(withIdentifier: "showTeacherArea", sender: self)
+                    } else {
+                        self.performSegue(withIdentifier: "showStudentArea", sender: self)
+                    }
+                    
             
                 } else {
                     
